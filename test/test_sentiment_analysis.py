@@ -7,4 +7,5 @@ class TestSentimentAnalyzer(unittest.TestCase):
         self.assertEqual(sentiment_analyzer('I hate working with Python')['label'], 'SENT_NEGATIVE')
         self.assertEqual(sentiment_analyzer('I am neutral on Python')['label'], 'SENT_NEUTRAL')
 
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()
